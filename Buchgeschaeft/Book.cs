@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class Program
+     class Book 
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        string author;
+        string isbn; 
+
+        public Book():base()
+
     }
 }

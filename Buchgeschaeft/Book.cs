@@ -6,12 +6,33 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-     class Book 
+    enum Category
     {
-        string author;
-        string isbn; 
+        History = 10,
+        Thriller = 20, 
+        Fantasy = 30, 
+        Food = 40, 
+        Chiildren = 50,
+    }
 
-        public Book():base()
+     class Book : Item  
+    {
+        public string author;
+        public string isbn;
+        protected Category category; 
 
+        public Book(decimal price, int stock, string titel, string author, string isbn, Category category):base(price, stock, titel)
+        {
+            this.author = author; 
+            this.isbn = isbn;
+            this.category = category;
+
+        }
+
+
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}: {Titel} ({author} ({(int)this.category}))";
+        }
     }
 }

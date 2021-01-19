@@ -8,7 +8,7 @@ namespace Buchgeschaeft
 {
     class AudioBook : Book
     {
-        int duration;
+        protected int duration;
 
         public AudioBook(decimal price, int stock, string titel, string author, string isbn, int duration, Category category) : base(price, stock, titel, isbn, author, category)
         {

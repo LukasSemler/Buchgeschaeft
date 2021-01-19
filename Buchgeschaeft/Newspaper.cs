@@ -8,7 +8,7 @@ namespace Buchgeschaeft
 {
     class Newspaper : Item
     {
-        DateTime dateOfIssue;
+        protected DateTime dateOfIssue;
 
         public Newspaper(decimal price, int stock, string title, DateTime dateOfIssue) : base(price, stock, title)
         {

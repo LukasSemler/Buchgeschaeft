@@ -17,8 +17,8 @@ namespace Buchgeschaeft
 
      class Book : Item  
     {
-        public string author;
-        public string isbn;
+        protected string author;
+        protected string isbn;
         protected Category category; 
 
         public Book(decimal price, int stock, string titel, string author, string isbn, Category category):base(price, stock, titel)

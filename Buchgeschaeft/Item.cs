@@ -8,8 +8,8 @@ namespace Buchgeschaeft
 {
      class Item
     {
-        decimal price;
-        int stock;
+        protected decimal price;
+        protected int stock;
         public string Titel { get; }
 
         public Item(decimal price, int stock, string titel)
@@ -20,14 +20,14 @@ namespace Buchgeschaeft
         }
 
 
-        public bool TryPurchase(int number)
+        protected bool TryPurchase(int number)
         {
             stock += number;
             return true;
         }
 
 
-        public bool TrySell(int number)
+        protected bool TrySell(int number)
         {
             if (number > stock)
             {

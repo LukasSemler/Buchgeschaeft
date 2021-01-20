@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioBook.cs" />
-    <Compile Include="Book.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="Newspaper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookstoreLibary\BookstoreLibary.csproj">
+      <Project>{f61375cf-63bc-4e0b-97bc-cac7e677975d}</Project>
+      <Name>BookstoreLibary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

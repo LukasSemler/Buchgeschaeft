@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    enum Category
+    public enum Category
     {
         History = 10,
         Thriller = 20, 
@@ -15,7 +15,7 @@ namespace Buchgeschaeft
         Chiildren = 50,
     }
 
-     class Book : Item  
+     public class Book : Item  
     {
         protected string author;
         protected string isbn;

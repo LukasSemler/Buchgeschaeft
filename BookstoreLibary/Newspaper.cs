@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class Newspaper : Item
+    public class Newspaper : Item
     {
         protected DateTime dateOfIssue;
 

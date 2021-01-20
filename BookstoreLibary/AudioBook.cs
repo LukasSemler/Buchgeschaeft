@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class AudioBook : Book
+    public class AudioBook : Book
     {
-        protected int duration;
+        internal  int duration;
 
         public AudioBook(decimal price, int stock, string titel, string author, string isbn, int duration, Category category) : base(price, stock, titel, isbn, author, category)
         {

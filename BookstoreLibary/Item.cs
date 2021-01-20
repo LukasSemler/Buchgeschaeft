@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-     class Item
+     public class Item
     {
         protected decimal price;
         protected int stock;
